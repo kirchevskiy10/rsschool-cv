@@ -24,3 +24,32 @@ I'm a student of the GSTU. My goal is to lose myself in IT branch. My favourite 
 - CSS
 
 ---
+
+### Code example
+
+function fizzbuzz(n)
+{
+let arr = [];
+for (let i = 1; i <= n; i++) {
+i % 3 == 0 && i % 5 == 0 ? arr.push('FizzBuzz') : i % 3 == 0 ? arr.push('Fizz') : i % 5 == 0 ? arr.push('Buzz') : arr.push(i);
+}
+return arr;
+}
+
+---
+
+### Work experience
+
+---
+
+### Education
+
+Gomel State Technical University named after P.O.Sukhoi (2018 - 2022)
+Faculty: Automated and Information Systems
+Department: Computer Science and Programming Technologies
+
+---
+
+### English
+
+A2
