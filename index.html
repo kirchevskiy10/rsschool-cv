@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
+<body class="putin">
+<nav>
+    <ul class="photoNLogo container navigation">
+        <li class="item second">
+            <a href="#contacts">Contacts</a>
+        </li>
+        <li class="item second">
+            <a href="#AboutMe">About Me</a>
+        </li>
+        <li class="item second">
+            <a href="#Skills">Skills</a>
+        </li>
+        <li class="item second">
+            <a href="#CodeExample">Code example</a>
+        </li>
+        <li class="item second">
+            <a href="#WorkExp">Work experience</a>
+        </li>
+        <li class="item second">
+            <a href="#Education">Education</a>
+        </li>
+        <li class="item second">
+            <a href="#English">English level</a>
+        </li>
+    </ul>
+</nav>
+<header>
+    <div class="photoNLogo">
+
+        <a href="https://github.com/kirchevskiy10">
+            <ul class="container">
+                <li class="item">
+                    <div>
+                        <img
+                                src="https://avatars.githubusercontent.com/u/61141388?s=400&u=7464cb13c27f42c0e5fa8a90706ebb0c35a642ff&v=4"
+                                height="200" alt="I am">
+                    </div>
+                </li>
+                <li class="item second">
+
+                    <p class="linkGit">kirchevskiy10</p>
+
+
+                </li>
+            </ul>
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+    <a id="contacts"></a>
+    <div class="header border" id="myHeader">
+        <h1>Kirchevskiy Dmitriy, 19 y.o.</h1>
+    </div>
+    <section class="content border">
+        <h3>Contacts for communication</h3>
+        <a id="AboutMe"></a>
+        <ul>
+            <li>Email: kirchevskiy10@gmail.com</li>
+            <li>Telephone number: +375291637400</li>
+            <li>VK: <a href="https://vk.com/dimon_tipo">https://vk.com/dimon_tipo</a></li>
+        </ul>
+
+    </section>
+
+    <section class="border">
+        <a id="Skills"></a>
+        <h3>About me</h3>
+
+        <p>I’m a student of the GSTU. My goal is to lose myself in IT branch. My favourite language is English.</p>
+
+    </section>
+
+    <section class="border">
+
+        <h3>Skills</h3>
+        <a id="CodeExample"></a>
+        <ul>
+            <li>JS</li>
+            <li>C#</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+    <section class="border">
+
+        <h3>Code example</h3>
+        <a id="WorkExp"></a>
+        <p>function fizzbuzz(n) { let arr = []; for (let i = 1; i 	&lt; n; i++) { i % 3 == 0 && i % 5 == 0 ?
+            arr.push(‘FizzBuzz’) : i % 3 == 0 ? arr.push(‘Fizz’) : i % 5 == 0 ? arr.push(‘Buzz’) : arr.push(i); } return
+            arr; }</p>
+
+    </section>
+    <section class="border">
+
+        <h3>Work experience</h3>
+        <a id="Education"></a>
+        <p>no experience</p>
+
+    </section>
+    <section class="border">
+
+        <h3>Education</h3>
+        <a id="English"></a>
+        <p>Gomel State Technical University named after P.O.Sukhoi (2018 - 2022) Faculty: Automated and Information
+            Systems Department: Computer Science and Programming Technologies</p>
+
+    </section>
+    <section class="border">
+
+        <h3>English level</h3>
+
+        <p>A2</p>
+
+    </section>
+</main>
+<footer>
+    <section>
+        <h6>2021</h6>
+        <ul class="container FooterUl">
+            <li class="item">
+                <a href="https://vk.com/dimon_tipo">
+                    <img src="https://www.pikpng.com/pngl/b/481-4815508_vkontakte-logo-png-vk-png-clipart.png"
+                         height="50" alt="vk">
+                </a>
+            </li>
+            <li class="item second">
+                <a href="https://www.instagram.com/dimon_tipo/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"
+                         height="50" alt="inst">
+                </a>
+            </li>
+            <li></li>
+        </ul>
+    </section>
+</footer>
+<script>
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    let header = document.getElementById("myHeader");
+    let sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+
+
+</html>
